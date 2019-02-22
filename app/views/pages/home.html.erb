@@ -1,3 +1,30 @@
-<div class="container">
-    <h1> Hello World </h1>
+<%= content_for :head do %>
+  <%= javascript_include_tag "particles_json.js" %>
+  <%= javascript_include_tag "particles.js" %>
+<% end %>
+
+<div id="particles-js">
+  <div class="portfolio-wrapper">
+    <div class="portfolio-container">
+      <h1>Dillon Cortez</h1>
+      <p>Deep Learning - Software - Web Development</p>
+      <div class="portfolio-btns">
+      </div>
+    </div>
+  </div>
 </div>
+
+<!-- <div class="" id="particles-js">
+  Hello World
+</div>
+
+<header class="masthead d-flex" id="particles-js">
+  <div class="container text-center my-auto">
+      <h1 class="mb-1">Dillon Cortez</h1>
+      <h3 class="mb-5">
+        <em>Deep Learning - Full Stack Development</em>
+      </h3>
+      <a class="btn btn-default btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+  </div>
+  <div class="overlay"></div>
+</header> -->

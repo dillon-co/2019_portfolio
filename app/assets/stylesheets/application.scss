@@ -1,1 +1,136 @@
 @import "bootstrap";
+@import "font-awesome";
+@import 'config/*';
+
+$base-blue: #3D94F6;
+$blue-1: lighten($base-blue, 45%);
+$blue-2: lighten($base-blue, 25%);
+$blue-3: $base-blue;
+$blue-4: darken($base-blue, 25%);
+$blue-5: darken($base-blue, 50%);
+
+$danger: #F6433D;
+$grey-blue: #6481A1;
+$grey-light: #ECF0F1;
+$grey-disabled: #BDC3C7;
+$grey-dark: #34495E;
+
+$flash-notice-bg: #009DB2;
+$flash-alert-bg: #B21500;
+
+$dpl-purple: #8168B1;
+$facebook-blue: #3B5998;
+$github-black: black;
+
+
+
+.main{
+  background: rgba(0,0,0,0.9);
+  // color: $blue-5;
+  color: white;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  font-family: 'CodenameCoder-Bold', monospace;
+
+  .portfolio-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .portfolio-container {
+      text-align: center;
+      margin-bottom: 100px;
+
+      h1 {
+        margin-top: 0;
+        margin-bottom: 20px;
+
+        text-transform: uppercase;
+        font-size: 64px;
+      }
+      p:last-of-type {
+        margin-bottom: 0;
+        overflow: hidden;
+      }
+      .portfolio-btns {
+        padding-top: 10px;
+
+        a {
+          display: inline-block;
+          position: relative;
+          transition: all 0.17s ease-out;
+
+          height: 40px;
+          width: 40px;
+          margin: 0 5px;
+          line-height: 40px;
+
+          border: 2px solid $blue-4;
+
+          color: $blue-4;
+          text-align: center;
+          font-size: 28px;
+
+          span {
+            position: absolute;
+            top: -1px; left: -1px; right: -1px; bottom: -1px;
+
+            overflow: hidden;
+          }
+          span:before {
+            content: "";
+            transition: all 0.3s ease-out;
+            position: absolute;
+            top: 0;
+            left: 0.5px;
+            display: inline-block;
+
+            width: 100%;
+            height: 100%;
+
+            line-height: 40px;
+            font-family: "FontAwesome";
+            font-size: 25px;
+            text-align: center;
+            z-index: 1;
+          }
+          &.flask span:before { content: "\f0c3"; top: 1px; }
+          &.github span:before { content: "\f09b"; top: 2px; }
+          &.facebook span:before { content: "\f09a"; left: -0.5px; top: 2px; }
+          span:after {
+            content: "";
+            transition: all 0.17s ease-in;
+            position: absolute;
+
+            height: 40px;
+            width: 40px;
+            background-color: $blue-1;
+          }
+          &.flask span:after { top: 1px; left: -45px; }
+          &.github span:after { top: 45px; left: 1px; right: 1px; }
+          &.facebook span:after { top: 1px; left: 45px; }
+          &:hover {
+            span:after { top: 1px; left: 1px; right: 1px; }
+            &.flask span:before { color: $dpl-purple; }
+            &.github span:before { color: $github-black; }
+            &.facebook span:before { color: $facebook-blue; }
+          }
+        }
+      }
+    }
+  }
+
+  #particles-js {
+    height: 100%;
+    width: 100%;
+  }
+}
