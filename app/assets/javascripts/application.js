@@ -24,5 +24,6 @@
 
 
 $('.main').ready(function() {
+  console.log('main.ready function is working')
   particlesJS.load('particles-js', particlesJSON, function() {});
 })

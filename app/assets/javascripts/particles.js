@@ -9,7 +9,7 @@
 /* ----------------------------------------------- */
 
 var pJS = function(tag_id, params){
-
+  console.log("Particles js is working")
 
   var canvas_el = document.querySelector('#'+tag_id+' > .particles-js-canvas-el');
   /* particles.js variables with default values */
