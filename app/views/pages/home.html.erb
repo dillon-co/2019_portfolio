@@ -2,29 +2,34 @@
   <%= javascript_include_tag "particles_json.js" %>
   <%= javascript_include_tag "particles.js" %>
 <% end %>
+<div class="main">
 
-<div id="particles-js">
-  <div class="portfolio-wrapper">
-    <div class="portfolio-container">
-      <h1>Dillon Cortez</h1>
-      <p>Deep Learning - Software - Web Development</p>
-      <div class="portfolio-btns">
+  <div id="particles-js">
+    <div class="row">
+      <div class="col-md-3">
+      </div>
+      <div class="portfolio-wrapper col-md-6">
+        <div class="portfolio-container" id="">
+          <h1>Dillon Cortez</h1>
+          <p>Deep Learning - Software - Web Development
+          <div class="portfolio-btns">
+            <%= image_tag 'martini.svg', size:'50' %></p>
+            <div class="portfolio-btns">
+            <%= link_to "Start", playground_path %>
+          </div>
+          </div>
+          <!-- <div class="start-div-wrapper">
+            <div class="start-div-container">
+
+              <h2>Welcome.</h2>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="col-md-3">
+
       </div>
     </div>
   </div>
-</div>
 
-<!-- <div class="" id="particles-js">
-  Hello World
 </div>
-
-<header class="masthead d-flex" id="particles-js">
-  <div class="container text-center my-auto">
-      <h1 class="mb-1">Dillon Cortez</h1>
-      <h3 class="mb-5">
-        <em>Deep Learning - Full Stack Development</em>
-      </h3>
-      <a class="btn btn-default btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-  </div>
-  <div class="overlay"></div>
-</header> -->

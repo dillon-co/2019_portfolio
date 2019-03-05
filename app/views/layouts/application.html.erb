@@ -4,14 +4,16 @@
     <title>Portfolio</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= javascript_pack_tag 'application' %>
+    <%##= stylesheet_pack_tag 'application' %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i|Press+Start+2P|Source+Code+Pro" rel="stylesheet">
+
   </head>
 
   <body>
-    <div class="main">
-      <%= yield %>
-    </div>
+        <%= yield %>
   </body>
 </html>

@@ -14,13 +14,14 @@
 //= require activestorage
 //= require jquery3
 //= require popper
+
 //= require bootstrap-sprockets
 
+//= require react
+//= require react_ujs
+//= require components
 //= require_tree .
 
-// particlesJS.load('particles-js', './particles.json', function() {
-//   console.log('callback - particles.js config loaded');
-// });
 
 $('.main').ready(function() {
   particlesJS.load('particles-js', particlesJSON, function() {});
