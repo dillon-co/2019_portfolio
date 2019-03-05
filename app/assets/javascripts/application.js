@@ -17,12 +17,13 @@
 
 //= require bootstrap-sprockets
 
-//= require react
-//= require react_ujs
+// require react
+// require react_ujs
 //= require components
 //= require_tree .
 
 console.log("Hello world");
+
 $().ready(function() {
   console.log('main.ready function is working');
   particlesJS.load('particles-js', particlesJSON, function() {});
