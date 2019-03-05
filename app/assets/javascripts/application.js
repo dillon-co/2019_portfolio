@@ -22,8 +22,8 @@
 //= require components
 //= require_tree .
 
-console.log("Hello world")
-$('.main').ready(function() {
-  console.log('main.ready function is working')
+console.log("Hello world");
+$().ready(function() {
+  console.log('main.ready function is working');
   particlesJS.load('particles-js', particlesJSON, function() {});
 })
